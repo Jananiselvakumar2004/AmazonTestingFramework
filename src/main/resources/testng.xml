@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Automation Suite">
+
+    <listeners>
+        <listener class-name="com.amazon.listeners.RetryListener"/>
+    </listeners>
+
+    <test name="Amazon Tests">
+
+        <classes>
+
+            <class name="com.amazon.tests.AmazonSearchTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
